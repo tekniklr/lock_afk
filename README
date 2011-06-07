@@ -1,0 +1,18 @@
+This program is basically a wrapper for xlock, allowing the user to set
+a message to scroll in the marquee.
+
+It has other bells and whistles, like forcing offlineimap and telling me
+to go home at the end of the day (I sometimes have trouble doing this in a timely manner).
+
+This is also my first TK interface, which was kinda fun to figure out.
+
+It is super tailored to the specific setup I used to use:
+  * Will lock the screen overnight. Once it is unlocked in the morning, it
+    sets a timer for 8 hours. Once that timer is up, it will pop up
+    windows nagging me to go home.
+  * Once I agree to go home, it will run a wrapper script for Unison to   
+    sync specific directories of my work computer to my home computer.
+  * The away messages default to whatever makes sense (will return: next 
+    weekday morning, time, etc) but are customizable.
+  * Also has an away-for-lunch mode if the program is run manually before 
+    4 PM. This does not affect the 8 hour / day work timer.
